@@ -8,7 +8,7 @@ A Django REST API to fetch latest videos sorted in reverse chronological order o
 ## Architecture
 
 <p align="center">
-<img src="Screenshots/rest.png" align="centre" height="150" width="250" >
+<img src="Screenshots/Architecture.png" align="centre" height="407" width="592" >
 </p>
 
 
