@@ -20,6 +20,6 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('new/',views.fetch_new_posts),
-    path('',views.VideoList.as_view()),
+    path('new/',views.fetch_new_posts),                    # /new of localhost - This endpoint is responsible for fetching all videos
+    path('',views.VideoList.as_view()),                    # homepage of localhost- This endpoint is responsible for showing all videos
 ]

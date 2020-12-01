@@ -22,9 +22,11 @@ class VideoList(generics.ListAPIView):
     queryset = Videos.objects.all()
     filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter)
    
+    # Adding the search and filter fields
     search_fields = ['title']
     filter_fields = ['channelTitle']
 
+    # For sorting the videos' data in reverse chronological order by default
     ordering = ['-publishingDateTime']
     serializer_class = VideosSerializer
     pagination_class = PageNumberPagination
